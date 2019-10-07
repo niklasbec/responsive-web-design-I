@@ -309,6 +309,12 @@ section h1 {
 	}
 } 
 
+@media (max-width: 801px) {
+	.text-blocks2 {
+		border-bottom: 2px solid black;
+	}
+} 
+
 div p, div h3 {
 	margin: 10px 10px 0 10px;
 }
