@@ -57,6 +57,12 @@ html, body {
     font-family: 'Titillium Web', sans-serif;
 }
 
+@media (max-width: 501px) {
+	html, body {
+		overflow-x: hidden;
+	}
+}
+
 h1, h2, h3, h4, h5 {
     font-family: 'Bangers', cursive;
     letter-spacing: 1px;
@@ -68,13 +74,19 @@ h1, h2, h3, h4, h5 {
 	margin: 0 auto;
 }
 
+@media (max-width: 501px) {
+	.container {
+		width: 500px;
+	}
+}
+
 header nav a {
 	text-decoration: none;
 	color: gray;
 	margin-right: 30px;
 }
 
-@media (max-width: 515px) {
+@media (max-width: 501px) {
 	header nav a {
 		margin-right: unset;
 		display: block;
@@ -92,14 +104,16 @@ header {
 	justify-content: space-between;
 }
 
-@media (max-width: 515px) {
+@media (max-width: 501px) {
 	header {
 		justify-content: center;
 		flex-wrap: wrap;
+		position: relative;
+		left: 150px;
 	}
 }
 
-@media (max-width: 515px) {
+@media (max-width: 501px) {
 	nav {
 		order: 2;
 		position: relative;
@@ -112,7 +126,7 @@ header {
 	top: -8px;
 }
 
-@media (max-width: 515px) {
+@media (max-width: 501px) {
 	.logo {
 		
 		position: relative;
@@ -132,10 +146,11 @@ section {
 	border-bottom: 1px dashed black;
 }
 
-@media (max-width: 515px) {
+@media (max-width: 501px) {
 	section {
 	border-bottom: 2px solid black;
 	padding-bottom: 121px;
+}
 }
 
 section h1 {
@@ -143,7 +158,7 @@ section h1 {
 	text-align: center;
 }
 
-@media (max-width: 515px) {
+@media (max-width: 501px) {
 	section h1 {
 		font-size: 72px;
 		position: relative;
@@ -152,7 +167,7 @@ section h1 {
 	}
 }
 
-@media (max-width: 515px) {
+@media (max-width: 501px) {
 	.img1 {
 		display: none;
 	}
@@ -170,7 +185,7 @@ section h1 {
 	top: -110px;
 }
 
-@media (max-width: 515px) {
+@media (max-width: 501px) {
 	.get-started {
 		position: relative;
 		left: 165px;
@@ -186,7 +201,7 @@ section h1 {
 	margin: 30px 0 30px 0;
 }
 
-@media (max-width: 515px) {
+@media (max-width: 501px) {
 	.text-blocks, .text-blocks2 {
 		display: flex;
 		flex-wrap: wrap;
@@ -198,7 +213,7 @@ section h1 {
 	}
 } 
 
-@media (max-width: 515px) {
+@media (max-width: 501px) {
 	.text-blocks div, .text-blocks2 div {
 		position: relative;
 		left: 9px;
@@ -212,7 +227,7 @@ section h1 {
 	padding: 30px;
 }
 
-@media (max-width: 515px) {
+@media (max-width: 501px) {
 	.text-blocks2 {
 		padding: unset;
 		border-bottom: 2px solid black;
@@ -227,7 +242,7 @@ h3 {
 	font-size: 20px;
 }
 
-@media (max-width: 515px) {
+@media (max-width: 501px) {
 	h3 {
 		font-size: 16px;
 	}
@@ -238,10 +253,9 @@ h3 {
 	margin: 50px 0 80px 0;
 }
 
-@media (max-width: 515px) {
+@media (max-width: 501px) {
 	.copyright {
 		position: relative;
-		right: 150px;
 		top: 30px;
 	}
 }
@@ -250,7 +264,7 @@ address p {
 	margin: 0;
 }
 
-@media (max-width: 515px) {
+@media (max-width: 501px) {
 	address h2 {
 		font-size: 18px;
 		position: relative;
@@ -274,7 +288,7 @@ h2{
 	right: 25px;
 }
 
-@media (max-width: 515px) {
+@media (max-width: 501px) {
 	.middle-img {
 		width: 460px;
 		position: relative;
