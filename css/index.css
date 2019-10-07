@@ -1,3 +1,403 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/*Redesign*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.container {
+	width: 800px;
+	margin: 0 auto;
+}
+
+@media (min-width: 501px) and (max-width: 800px) {
+    .container {
+      width: 500px;
+    }
+  }
+
+@media (max-width: 500px) {
+    .container {
+      width: 100vw;
+    }
+  }
+
+header nav a {
+	text-decoration: none;
+	color: gray;
+	margin-right: 30px;
+}
+
+@media (min-width: 501px) and (max-width: 800px) {
+    header nav {
+      order: 2;
+      margin-top: 2%;
+    }
+  }
+
+ @media (max-width: 500px) {
+    header nav {
+      order: 2;
+      margin-top: 2%;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  @media (max-width: 500px) {
+    header nav a {
+      order: 2;
+      margin-top: 2%;
+      margin-right: unset;
+      border-bottom: 1px solid gray;
+      font-size: 25px;
+      padding: 4% 0;
+    }
+    header nav a:first-child {
+        border-top: 1px solid gray;
+        padding-top: 5%;
+      }
+    }
 
 
+header {
+	display: flex;
+	margin-top: 5%;
+    justify-content: space-between;
+}
+
+@media (min-width: 501px) and (max-width: 800px) {
+    header {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+
+@media (max-width: 500px) {
+    header {  
+      flex-direction: column;
+      text-align: center;
+      width: 100vw;
+    }
+  }
+
+.logo {
+	position: relative;
+	bottom: 8px;
+}
+
+@media (min-width: 501px) and (max-width: 800px) {
+    .logo {
+      width: 100%;
+      margin: 8% 0;
+    }
+  }
+
+@media (max-width: 500px) {
+    .logo {
+      margin: 8% 0 0 0;
+      position: unset;
+    }
+  }
+
+section {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 4% 0px 2% 0px;
+	padding-bottom: 7%;
+	border-bottom: 1px solid black;
+}
+
+section h1 {
+	font-size: 60px;
+	text-align: center;
+}
+
+@media (min-width: 501px) and (max-width: 800px) {
+    .img1 {
+      display: none;
+    }
+  }
+
+@media (max-width: 500px) {
+    .img1 {
+      display: none;
+    }
+  }
+
+
+.innovation-get-started {
+    text-align: center;
+    position: relative;
+    left: 6%;
+}
+
+@media (min-width: 501px) and (max-width: 800px) {
+    .innovation-get-started {
+     width: 100%;
+     justify-content: center;
+     left: unset;
+     margin: 5% 0;
+  }
+  .innovation-get-started h1 {
+    margin-bottom: 5%;
+ }
+}
+
+@media (max-width: 500px) {
+    .innovation-get-started {
+     width: 100%;
+     justify-content: center;
+     left: unset;
+     margin: 5% 0;
+  }
+  .innovation-get-started h1 {
+    margin-bottom: 5%;
+ }
+}
+
+.get-started {
+	color: black;
+	text-decoration: none;
+	border: 1px solid black;
+	padding: 10px 25px;
+    font-size: 15px;
+}
+
+@media (max-width: 500px) {
+    .get-started {
+        padding: 3px 30px;
+    }
+ 
+}
+
+.text-blocks, .text-blocks2 {
+	display: flex;
+	margin: 4% 0 4% 0;
+}
+
+@media (max-width: 500px) {
+    .text-blocks, .text-blocks2 {
+        display: flex;
+        margin: 5% 0;
+        flex-direction: column;
+}
+    .text-blocks p, .text-blocks2 p {
+    width: 90vw;
+}
+    .text-blocks div, .text-blocks2 div {
+        position: relative;
+        left: 5vw;
+}
+}
+
+.text-blocks2 {
+	border-bottom: 1px solid black;
+    padding: 0 0 3% 0;
+}
+
+.text-blocks2 div:first-child, .text-blocks2 div:nth-child(2)  {
+	padding-right: 4%;
+}
+
+@media (max-width: 500px) {
+    .text-blocks2 div h3, .text-blocks1 div h3  {
+        margin-top: 4%;
+    }
+}
+
+@media (min-width: 501px) and (max-width: 800px) {
+    .text-blocks2 div {
+        width: 35%;
+    }
+}
+
+@media (max-width: 500px) {
+    .text-blocks2 div {
+        width: 100%;
+    }
+}
+
+.middle-img {
+	margin-top: 4%;
+	width: 100%;
+}
+
+div p, div h3 {
+	margin: 2% 2% 0 2%;
+}
+
+h3 {
+	font-size: 20px;
+}
+
+.copyright {
+	text-align: center;
+	margin: 10% 0 10% 0;
+}
+
+address p {
+	margin: 0;
+}
+
+@media (max-width: 500px) {
+    address {
+        position: relative;
+        left: 6vw;
+    }
+}
+
+h2{
+	font-size: 30px;
+}
+
+@media (min-width: 501px) and (max-width: 800px) {
+    h2 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 500px) {
+    h2 {
+        font-size: 18px;
+    }
+}
+
+.footer {
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer-left {
+	width: 40%;
+}
+
+.services-header-img {
+	margin: 10px 0 30px 0;
+	width: 800px;
+}
+
+.services {
+	border-bottom: 1px solid black;
+	padding-bottom: 30px;
+	margin-bottom: 30px;
+}
+
+.services-boxes {
+	margin-bottom: 20px;
+	height: 225px;
+	border: 1px solid black;
+	width: calc(50% - 20px);
+	background-color: #f5f5f5;
+}
+
+.services-boxes h3{
+	padding: 5px 5px 10px 5px;
+}
+
+.services-boxes p{
+	padding: 5px 5px 10px 5px;
+}
+
+.services-offered {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	border-bottom: 1px solid black;
+	margin-bottom: 30px;
+	padding-bottom: 10px;
+}
+
+.learn-more {
+	border: 1px solid black;
+	position: relative;
+	display: block;
+	width: 150px;
+	height: 35px;
+	text-align: center;	
+	text-decoration: none;
+	color: black;
+	left: 20px;
+	top: 10px;
+	background-color: #fff;
+
+}
+
+.list {
+	list-style-type: disc;
+	position: relative;
+	top: 20px;
+	left: 35px;
+}
+
+.services-info-img {
+	width: calc(50% - 20px);
+}
+
+.list li {
+	margin: 0 0 5px 0;
+}
+
+.learn-more-p {
+	position: relative;
+	bottom: 7px;
+}
