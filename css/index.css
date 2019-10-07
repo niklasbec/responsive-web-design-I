@@ -249,19 +249,18 @@ section h1 {
 	top: -110px;
 }
 
-@media (max-width: 501px) {
+@media (max-width: 801px) {
 	.get-started {
 		position: relative;
-		left: 90px;
+		left: 30vw;
 		padding: 3px 43px;
 		top: unset;
 		bottom: 110px;
 		font-size: 17px;
-		right: 100px;
 	}
 }
 
-@media (max-width: 801px) {
+@media (max-width: 501px) {
 	.get-started {
 		position: relative;
 		left: 32vw;
@@ -269,6 +268,7 @@ section h1 {
 		top: unset;
 		bottom: 110px;
 		font-size: 17px;
+		right: 100px;
 	}
 }
 
